@@ -1,0 +1,10 @@
+module and_module(
+	parameter N=4
+	input wire [N-1:0]a,[N-1:0]b;
+	output logic result, wire [N-1:0]falgs;
+);
+
+	assign result = a && b;
+
+
+endmodule;
