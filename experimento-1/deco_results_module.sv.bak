@@ -1,0 +1,46 @@
+module deco_results_module
+(
+  input logic [3:0] temp_results,
+  output logic [6:0] results
+);
+
+  always @(temp_results)
+    begin
+	   case (temp_results)
+		  0 : results = 14'b000000;
+		  
+		  1 : results = 14'b000001;
+		  
+		  2 : results = 14'b000010;
+		  
+		  3 : results = 14'b000011;
+		  
+		  4 : results = 14'b000100;
+		  
+		  5 : results = 14'b000101;
+		  
+		  6 : results = 14'b000110;
+		  
+		  7 : results = 14'b000111;
+		  
+		  8 : results = 14'b001000;
+		  
+		  9 : results = 14'b001001;
+		  
+		  10 : results = 14'b001010;
+		  
+		  11 : results = 14'b001011;
+		  
+		  12 : results = 14'b001100;
+		  
+		  13 : results = 14'b001101;
+		  
+		  14 : results = 14'b001110;
+		  
+		  15 : results = 14'b001111;
+		  
+		  default : seg = 14'b111111; 
+       endcase
+	  end
+	  
+endmodule 

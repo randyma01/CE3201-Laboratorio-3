@@ -1,0 +1,30 @@
+module fourBitSubstractor_module
+(
+  input logic [3:0] a, 
+  input logic [3:0] b,
+  output logic [3:0] flags,
+  output logic [3:0] sVect,
+  output logic [4:0] auxCarry
+ );
+	
+	assign auxCarry[0] = 0;
+	
+	oneBitFullSubstractor_module substractor_1(sVect[0], auxCarry[1], aVect[0], bVect[0], auxCarry[0]);
+	oneBitFullSubstractor_module substractor_2(sVect[1], auxCarry[2], aVect[1], bVect[1], auxCarry[1]);
+	oneBitFullSubstractor_module substractor_3(sVect[2], auxCarry[3], aVect[2], bVect[2], auxCarry[2]);
+	oneBitFullSubstractor_module substractor_4(sVect[3], auxCarry[4], aVect[3], bVect[3], auxCarry[3]);
+	
+	// Verificar flag negativo (N)
+	assign flags[0] = (auxCarry[4] == 1);
+	
+	// Verificar flag cero (Z)
+	assign flags[1] = (sVect == 0);
+	
+	// Verificar flag acarreo (C)
+	assign flags[2] = (auxCarry[4] == 1);
+	
+	// Verificar flag desbordamiento (V)
+	assign flags[3] = (auxCarry[4] == 1);
+	
+	
+endmodule 

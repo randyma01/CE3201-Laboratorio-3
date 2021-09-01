@@ -1,0 +1,410 @@
+|calculator_module
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+uc[0] => uc[0].IN1
+uc[1] => uc[1].IN1
+uc[2] => uc[2].IN1
+uc[3] => uc[3].IN1
+uc[4] => uc[4].IN1
+results[0] << deco_results_module:deco_results.port1
+results[1] << deco_results_module:deco_results.port1
+results[2] << deco_results_module:deco_results.port1
+results[3] << deco_results_module:deco_results.port1
+results[4] << deco_results_module:deco_results.port1
+results[5] << deco_results_module:deco_results.port1
+results[6] << deco_results_module:deco_results.port1
+flags[0] << deco_flags_module:deco_flags.port1
+flags[1] << deco_flags_module:deco_flags.port1
+flags[2] << deco_flags_module:deco_flags.port1
+flags[3] << deco_flags_module:deco_flags.port1
+
+
+|calculator_module|alu_module:alu
+a[0] => a[0].IN5
+a[1] => a[1].IN5
+a[2] => a[2].IN5
+a[3] => a[3].IN5
+b[0] => b[0].IN5
+b[1] => b[1].IN5
+b[2] => b[2].IN5
+b[3] => b[3].IN5
+uc[0] => Mux0.IN12
+uc[0] => Mux1.IN12
+uc[0] => Mux2.IN12
+uc[0] => Mux3.IN12
+uc[0] => Mux4.IN12
+uc[0] => Mux5.IN12
+uc[0] => Mux6.IN12
+uc[0] => Mux7.IN12
+uc[0] => Mux8.IN19
+uc[1] => Mux0.IN11
+uc[1] => Mux1.IN11
+uc[1] => Mux2.IN11
+uc[1] => Mux3.IN11
+uc[1] => Mux4.IN11
+uc[1] => Mux5.IN11
+uc[1] => Mux6.IN11
+uc[1] => Mux7.IN11
+uc[1] => Mux8.IN18
+uc[2] => Mux0.IN10
+uc[2] => Mux1.IN10
+uc[2] => Mux2.IN10
+uc[2] => Mux3.IN10
+uc[2] => Mux4.IN10
+uc[2] => Mux5.IN10
+uc[2] => Mux6.IN10
+uc[2] => Mux7.IN10
+uc[2] => Mux8.IN17
+uc[3] => Mux0.IN9
+uc[3] => Mux1.IN9
+uc[3] => Mux2.IN9
+uc[3] => Mux3.IN9
+uc[3] => Mux4.IN9
+uc[3] => Mux5.IN9
+uc[3] => Mux6.IN9
+uc[3] => Mux7.IN9
+uc[3] => Mux8.IN16
+temp_results[0] <= temp_results[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+temp_results[1] <= temp_results[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+temp_results[2] <= temp_results[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+temp_results[3] <= temp_results[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+temp_flags[0] <= temp_flags[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+temp_flags[1] <= temp_flags[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+temp_flags[2] <= temp_flags[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+temp_flags[3] <= temp_flags[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_module|alu_module:alu|fourBitAdder_module:add_operation
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+temp_carry[0] => temp_carry[0].IN1
+temp_carry[1] => temp_carry[1].IN2
+temp_carry[2] => temp_carry[2].IN2
+temp_carry[3] => temp_carry[3].IN2
+temp_carry[4] => temp_carry[4].IN1
+flags[0] <= <GND>
+flags[1] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[2] <= temp_carry[4].DB_MAX_OUTPUT_PORT_TYPE
+flags[3] <= temp_carry[4].DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= oneBitFullAdder_module:adder_1.port3
+result[1] <= oneBitFullAdder_module:adder_2.port3
+result[2] <= oneBitFullAdder_module:adder_3.port3
+result[3] <= oneBitFullAdder_module:adder_4.port3
+
+
+|calculator_module|alu_module:alu|fourBitAdder_module:add_operation|oneBitFullAdder_module:adder_1
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => cout.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_module|alu_module:alu|fourBitAdder_module:add_operation|oneBitFullAdder_module:adder_2
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => cout.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_module|alu_module:alu|fourBitAdder_module:add_operation|oneBitFullAdder_module:adder_3
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => cout.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_module|alu_module:alu|fourBitAdder_module:add_operation|oneBitFullAdder_module:adder_4
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => cout.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_module|alu_module:alu|fourBitSubstractor_module:subs_operation
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+temp_carry[0] => temp_carry[0].IN1
+temp_carry[1] => temp_carry[1].IN2
+temp_carry[2] => temp_carry[2].IN2
+temp_carry[3] => temp_carry[3].IN2
+temp_carry[4] => temp_carry[4].IN1
+flags[0] <= temp_carry[4].DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[2] <= temp_carry[4].DB_MAX_OUTPUT_PORT_TYPE
+flags[3] <= temp_carry[4].DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= oneBitFullSubstractor_module:substractor_1.port3
+result[1] <= oneBitFullSubstractor_module:substractor_2.port3
+result[2] <= oneBitFullSubstractor_module:substractor_3.port3
+result[3] <= oneBitFullSubstractor_module:substractor_4.port3
+
+
+|calculator_module|alu_module:alu|fourBitSubstractor_module:subs_operation|oneBitFullSubstractor_module:substractor_1
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => res.IN1
+b => cout.IN0
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_module|alu_module:alu|fourBitSubstractor_module:subs_operation|oneBitFullSubstractor_module:substractor_2
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => res.IN1
+b => cout.IN0
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_module|alu_module:alu|fourBitSubstractor_module:subs_operation|oneBitFullSubstractor_module:substractor_3
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => res.IN1
+b => cout.IN0
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_module|alu_module:alu|fourBitSubstractor_module:subs_operation|oneBitFullSubstractor_module:substractor_4
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => res.IN1
+b => cout.IN0
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculator_module|alu_module:alu|and_module:and_operation
+a[0] => WideOr0.IN0
+a[1] => WideOr0.IN1
+a[2] => WideOr0.IN2
+a[3] => WideOr0.IN3
+b[0] => WideOr1.IN0
+b[1] => WideOr1.IN1
+b[2] => WideOr1.IN2
+b[3] => WideOr1.IN3
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|calculator_module|alu_module:alu|or_module:or_operation
+a[0] => WideOr0.IN0
+a[1] => WideOr0.IN1
+a[2] => WideOr0.IN2
+a[3] => WideOr0.IN3
+b[0] => WideOr1.IN0
+b[1] => WideOr1.IN1
+b[2] => WideOr1.IN2
+b[3] => WideOr1.IN3
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|calculator_module|alu_module:alu|xor_module:xor_operation
+a[0] => result.IN0
+a[1] => result.IN0
+a[2] => result.IN0
+a[3] => result.IN0
+b[0] => result.IN1
+b[1] => result.IN1
+b[2] => result.IN1
+b[3] => result.IN1
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|calculator_module|alu_module:alu|sll_module:sll_opertion
+a[0] => ShiftLeft0.IN4
+a[1] => ShiftLeft0.IN3
+a[2] => ShiftLeft0.IN2
+a[3] => ShiftLeft0.IN1
+b[0] => ShiftLeft0.IN8
+b[1] => ShiftLeft0.IN7
+b[2] => ShiftLeft0.IN6
+b[3] => ShiftLeft0.IN5
+result[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|calculator_module|alu_module:alu|srl_module:srl_operation
+a[0] => ShiftRight0.IN4
+a[1] => ShiftRight0.IN3
+a[2] => ShiftRight0.IN2
+a[3] => ShiftRight0.IN1
+b[0] => ShiftRight0.IN8
+b[1] => ShiftRight0.IN7
+b[2] => ShiftRight0.IN6
+b[3] => ShiftRight0.IN5
+result[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|calculator_module|deco_results_module:deco_results
+temp_results[0] => results[0].DATAIN
+temp_results[1] => results[1].DATAIN
+temp_results[2] => results[2].DATAIN
+temp_results[3] => results[3].DATAIN
+results[0] <= temp_results[0].DB_MAX_OUTPUT_PORT_TYPE
+results[1] <= temp_results[1].DB_MAX_OUTPUT_PORT_TYPE
+results[2] <= temp_results[2].DB_MAX_OUTPUT_PORT_TYPE
+results[3] <= temp_results[3].DB_MAX_OUTPUT_PORT_TYPE
+results[4] <= <GND>
+results[5] <= <GND>
+results[6] <= <GND>
+
+
+|calculator_module|deco_flags_module:deco_flags
+temp_flags[0] => flags[0].DATAIN
+temp_flags[1] => flags[1].DATAIN
+temp_flags[2] => flags[2].DATAIN
+temp_flags[3] => flags[3].DATAIN
+flags[0] <= temp_flags[0].DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= temp_flags[1].DB_MAX_OUTPUT_PORT_TYPE
+flags[2] <= temp_flags[2].DB_MAX_OUTPUT_PORT_TYPE
+flags[3] <= temp_flags[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
