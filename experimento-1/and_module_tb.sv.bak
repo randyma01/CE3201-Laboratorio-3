@@ -1,0 +1,19 @@
+module and_module_tb #(parameter N=4)();
+	
+	logic [N-1:0] a,b,result;
+	logic [3:0] flags;
+	and_module andmd(a,b,result,flags);
+	
+	initial begin
+	$display("Iniciando simulacion");
+	a=0000;
+	b=0000;
+	#40
+	
+	a=0000;
+	b=0001;
+	#40
+	
+	
+	end;
+endmodule;

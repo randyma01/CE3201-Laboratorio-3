@@ -1,0 +1,106 @@
+|nBitSubstractor_module_tb
+
+
+|nBitSubstractor_module_tb|nBitSubstractor_module:modulo
+a[0] => oneBitFullSubstractor_module:obs0.a
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => oneBitFullSubstractor_module:obs0.b
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+result[0] <= oneBitFullSubstractor_module:obs0.res
+result[1] <= oneBitFullSubstractor_module:obs1.port3
+result[2] <= oneBitFullSubstractor_module:obs2.port3
+result[3] <= oneBitFullSubstractor_module:obs3.port3
+flags[0] <= always0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= flags.DB_MAX_OUTPUT_PORT_TYPE
+flags[3] <= <GND>
+
+
+|nBitSubstractor_module_tb|nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => res.IN1
+b => cout.IN0
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitSubstractor_module_tb|nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs1
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => res.IN1
+b => cout.IN0
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitSubstractor_module_tb|nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs2
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => res.IN1
+b => cout.IN0
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitSubstractor_module_tb|nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs3
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => cout.IN0
+b => res.IN1
+b => res.IN1
+b => cout.IN0
+b => cout.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
