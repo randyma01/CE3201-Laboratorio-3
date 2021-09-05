@@ -1,7 +1,152 @@
-|nBitSubstractor_module_tb
+|alu_module_tb
 
 
-|nBitSubstractor_module_tb|nBitSubstractor_module:modulo
+|alu_module_tb|alu_module:modulo
+A[0] => A[0].IN7
+A[1] => A[1].IN7
+A[2] => A[2].IN7
+A[3] => A[3].IN7
+B[0] => B[0].IN7
+B[1] => B[1].IN7
+B[2] => B[2].IN7
+B[3] => B[3].IN7
+UC[0] => Mux0.IN3
+UC[0] => Mux1.IN4
+UC[0] => Mux2.IN4
+UC[0] => Mux3.IN4
+UC[0] => Mux4.IN3
+UC[0] => Mux5.IN3
+UC[0] => Mux6.IN3
+UC[0] => Mux7.IN3
+UC[0] => Mux8.IN10
+UC[1] => Mux0.IN2
+UC[1] => Mux1.IN3
+UC[1] => Mux2.IN3
+UC[1] => Mux3.IN3
+UC[1] => Mux4.IN2
+UC[1] => Mux5.IN2
+UC[1] => Mux6.IN2
+UC[1] => Mux7.IN2
+UC[1] => Mux8.IN9
+UC[2] => Mux0.IN1
+UC[2] => Mux1.IN2
+UC[2] => Mux2.IN2
+UC[2] => Mux3.IN2
+UC[2] => Mux4.IN1
+UC[2] => Mux5.IN1
+UC[2] => Mux6.IN1
+UC[2] => Mux7.IN1
+UC[2] => Mux8.IN8
+RESULT[0] <= RESULT[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+RESULT[1] <= RESULT[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+RESULT[2] <= RESULT[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+RESULT[3] <= RESULT[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+FLAGS[0] <= FLAGS[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+FLAGS[1] <= FLAGS[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+FLAGS[2] <= FLAGS[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+FLAGS[3] <= FLAGS[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod
+a[0] => oneBitFullAdder_module:oba0.a
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => oneBitFullAdder_module:oba0.b
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+result[0] <= oneBitFullAdder_module:oba0.res
+result[1] <= oneBitFullAdder_module:oba1.port3
+result[2] <= oneBitFullAdder_module:oba2.port3
+result[3] <= oneBitFullAdder_module:oba3.port3
+flags[0] <= always0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= flags.DB_MAX_OUTPUT_PORT_TYPE
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+b => res.IN1
+b => res.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba1
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+b => res.IN1
+b => res.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba2
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+b => res.IN1
+b => res.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba3
+a => res.IN0
+a => res.IN0
+a => res.IN0
+a => res.IN0
+b => res.IN1
+b => res.IN1
+b => res.IN1
+b => res.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+cin => cout.IN1
+cin => res.IN1
+cin => res.IN1
+cin => cout.IN1
+res <= res.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod
 a[0] => oneBitFullSubstractor_module:obs0.a
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -20,7 +165,7 @@ flags[2] <= flags.DB_MAX_OUTPUT_PORT_TYPE
 flags[3] <= <GND>
 
 
-|nBitSubstractor_module_tb|nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs0
+|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs0
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -41,7 +186,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nBitSubstractor_module_tb|nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs1
+|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs1
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -62,7 +207,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nBitSubstractor_module_tb|nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs2
+|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs2
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -83,7 +228,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|nBitSubstractor_module_tb|nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs3
+|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs3
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -102,5 +247,100 @@ cin => res.IN1
 cin => res.IN1
 res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_module_tb|alu_module:modulo|and_module:andMod
+a[0] => WideOr0.IN0
+a[1] => WideOr0.IN1
+a[2] => WideOr0.IN2
+a[3] => WideOr0.IN3
+b[0] => WideOr1.IN0
+b[1] => WideOr1.IN1
+b[2] => WideOr1.IN2
+b[3] => WideOr1.IN3
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|alu_module_tb|alu_module:modulo|or_module:orMod
+a[0] => WideOr0.IN0
+a[1] => WideOr0.IN1
+a[2] => WideOr0.IN2
+a[3] => WideOr0.IN3
+b[0] => WideOr1.IN0
+b[1] => WideOr1.IN1
+b[2] => WideOr1.IN2
+b[3] => WideOr1.IN3
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|alu_module_tb|alu_module:modulo|xor_module:xorMod
+a[0] => result.IN0
+a[1] => result.IN0
+a[2] => result.IN0
+a[3] => result.IN0
+b[0] => result.IN1
+b[1] => result.IN1
+b[2] => result.IN1
+b[3] => result.IN1
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|alu_module_tb|alu_module:modulo|sll_module:sllMod
+a[0] => ShiftLeft0.IN4
+a[1] => ShiftLeft0.IN3
+a[2] => ShiftLeft0.IN2
+a[3] => ShiftLeft0.IN1
+b[0] => ShiftLeft0.IN8
+b[1] => ShiftLeft0.IN7
+b[2] => ShiftLeft0.IN6
+b[3] => ShiftLeft0.IN5
+result[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|alu_module_tb|alu_module:modulo|srl_module:srlMod
+a[0] => ShiftRight0.IN4
+a[1] => ShiftRight0.IN3
+a[2] => ShiftRight0.IN2
+a[3] => ShiftRight0.IN1
+b[0] => ShiftRight0.IN8
+b[1] => ShiftRight0.IN7
+b[2] => ShiftRight0.IN6
+b[3] => ShiftRight0.IN5
+result[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
 
 

@@ -10,52 +10,63 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv}
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:03:47 on Sep 03,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv 
-# -- Compiling module oneBitFullSubstractor_module
+# Start time: 17:45:52 on Sep 05,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv 
+# -- Compiling module and_module
 # 
 # Top level modules:
-# 	oneBitFullSubstractor_module
-# End time: 23:03:47 on Sep 03,2021, Elapsed time: 0:00:00
+# 	and_module
+# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv}
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:03:47 on Sep 03,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv 
-# -- Compiling module nBitSubstractor_module
+# Start time: 17:45:52 on Sep 05,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module.sv 
+# -- Compiling module or_module
 # 
 # Top level modules:
-# 	nBitSubstractor_module
-# End time: 23:03:47 on Sep 03,2021, Elapsed time: 0:00:00
+# 	or_module
+# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:03:47 on Sep 03,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module_tb.sv 
-# -- Compiling module nBitSubstractor_module_tb
+# Start time: 17:45:52 on Sep 05,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module.sv 
+# -- Compiling module xor_module
 # 
 # Top level modules:
-# 	nBitSubstractor_module_tb
-# End time: 23:03:47 on Sep 03,2021, Elapsed time: 0:00:00
+# 	xor_module
+# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:52 on Sep 05,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module.sv 
+# -- Compiling module sll_module
 # 
-vsim work.nBitSubstractor_module_tb
-# vsim work.nBitSubstractor_module_tb 
-# Start time: 23:03:50 on Sep 03,2021
-# Loading sv_std.std
-# Loading work.nBitSubstractor_module_tb
-# Loading work.nBitSubstractor_module
-# Loading work.oneBitFullSubstractor_module
-add wave -position end  sim:/nBitSubstractor_module_tb/a
-add wave -position end  sim:/nBitSubstractor_module_tb/b
-add wave -position end  sim:/nBitSubstractor_module_tb/r
-add wave -position end  sim:/nBitSubstractor_module_tb/f
-run
-# Iniciando simulacion
-run
-run
-run
-# End time: 23:04:33 on Sep 03,2021, Elapsed time: 0:00:43
+# Top level modules:
+# 	sll_module
+# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:52 on Sep 05,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv 
+# -- Compiling module srl_module
+# 
+# Top level modules:
+# 	srl_module
+# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:45:52 on Sep 05,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv 
+# -- Compiling module oneBitFullAdder_module
+# 
+# Top level modules:
+# 	oneBitFullAdder_module
+# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

@@ -1,5 +1,5 @@
 Analysis & Elaboration report for experimento-1
-Fri Sep 03 23:03:39 2021
+Sun Sep 05 17:45:44 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,12 +9,21 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |nBitSubstractor_module_tb
-  5. Parameter Settings for User Entity Instance: nBitSubstractor_module:modulo
-  6. Analysis & Elaboration Settings
-  7. Port Connectivity Checks: "nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs0"
-  8. Port Connectivity Checks: "nBitSubstractor_module:modulo"
-  9. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |alu_module_tb
+  5. Parameter Settings for User Entity Instance: alu_module:modulo
+  6. Parameter Settings for User Entity Instance: alu_module:modulo|nBitAdder_module:adderMod
+  7. Parameter Settings for User Entity Instance: alu_module:modulo|nBitSubstractor_module:subsMod
+  8. Parameter Settings for User Entity Instance: alu_module:modulo|and_module:andMod
+  9. Parameter Settings for User Entity Instance: alu_module:modulo|or_module:orMod
+ 10. Parameter Settings for User Entity Instance: alu_module:modulo|xor_module:xorMod
+ 11. Parameter Settings for User Entity Instance: alu_module:modulo|sll_module:sllMod
+ 12. Parameter Settings for User Entity Instance: alu_module:modulo|srl_module:srlMod
+ 13. Analysis & Elaboration Settings
+ 14. Port Connectivity Checks: "alu_module:modulo|srl_module:srlMod"
+ 15. Port Connectivity Checks: "alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs0"
+ 16. Port Connectivity Checks: "alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba0"
+ 17. Port Connectivity Checks: "alu_module:modulo"
+ 18. Analysis & Elaboration Messages
 
 
 
@@ -41,10 +50,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri Sep 03 23:03:39 2021       ;
+; Analysis & Elaboration Status ; Successful - Sun Sep 05 17:45:44 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; experimento-1                               ;
-; Top-level Entity Name         ; nBitSubstractor_module_tb                   ;
+; Top-level Entity Name         ; alu_module_tb                               ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -72,130 +81,219 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |nBitSubstractor_module_tb ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |alu_module_tb ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nBitSubstractor_module:modulo ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; N              ; 4     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_module:modulo ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; N              ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                                  ;
-+---------------------------------------------------------------------------------+---------------------------+--------------------+
-; Option                                                                          ; Setting                   ; Default Value      ;
-+---------------------------------------------------------------------------------+---------------------------+--------------------+
-; Device                                                                          ; 5CSEMA5F31C6              ;                    ;
-; Top-level entity name                                                           ; nBitSubstractor_module_tb ; experimento-1      ;
-; Family name                                                                     ; Cyclone V                 ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                       ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                        ; On                 ;
-; Enable compact report table                                                     ; Off                       ; Off                ;
-; Restructure Multiplexers                                                        ; Auto                      ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                       ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                       ; Off                ;
-; Preserve fewer node names                                                       ; On                        ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable                    ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001              ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993                 ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto                      ; Auto               ;
-; Safe State Machine                                                              ; Off                       ; Off                ;
-; Extract Verilog State Machines                                                  ; On                        ; On                 ;
-; Extract VHDL State Machines                                                     ; On                        ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                       ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000                      ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                       ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                        ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                        ; On                 ;
-; Parallel Synthesis                                                              ; On                        ; On                 ;
-; DSP Block Balancing                                                             ; Auto                      ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                        ; On                 ;
-; Power-Up Don't Care                                                             ; On                        ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                       ; Off                ;
-; Remove Duplicate Registers                                                      ; On                        ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                       ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                       ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                       ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                       ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                       ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                        ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                       ; Off                ;
-; Optimization Technique                                                          ; Balanced                  ; Balanced           ;
-; Carry Chain Length                                                              ; 70                        ; 70                 ;
-; Auto Carry Chains                                                               ; On                        ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                        ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                       ; Off                ;
-; Auto ROM Replacement                                                            ; On                        ; On                 ;
-; Auto RAM Replacement                                                            ; On                        ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                        ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto                      ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto                      ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                        ; On                 ;
-; Strict RAM Replacement                                                          ; Off                       ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                        ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                       ; Off                ;
-; Auto Resource Sharing                                                           ; Off                       ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                       ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                       ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                       ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                        ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                       ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                        ; On                 ;
-; Report Parameter Settings                                                       ; On                        ; On                 ;
-; Report Source Assignments                                                       ; On                        ; On                 ;
-; Report Connectivity Checks                                                      ; On                        ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                       ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                         ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation        ; Normal compilation ;
-; HDL message level                                                               ; Level2                    ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                       ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000                      ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                      ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                       ; 100                ;
-; Clock MUX Protection                                                            ; On                        ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                       ; Off                ;
-; Block Design Naming                                                             ; Auto                      ; Auto               ;
-; SDC constraint protection                                                       ; Off                       ; Off                ;
-; Synthesis Effort                                                                ; Auto                      ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                        ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                       ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium                    ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto                      ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                        ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                        ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                       ; Off                ;
-+---------------------------------------------------------------------------------+---------------------------+--------------------+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_module:modulo|nBitAdder_module:adderMod ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs0" ;
-+------+-------+----------+-------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                           ;
-+------+-------+----------+-------------------------------------------------------------------+
-; cin  ; Input ; Info     ; Stuck at GND                                                      ;
-+------+-------+----------+-------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_module:modulo|nBitSubstractor_module:subsMod ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitSubstractor_module:modulo"                                                        ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; result ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; flags  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_module:modulo|and_module:andMod ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_module:modulo|or_module:orMod ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_module:modulo|xor_module:xorMod ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_module:modulo|sll_module:sllMod ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu_module:modulo|srl_module:srlMod ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; alu_module_tb      ; experimento-1      ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_module:modulo|srl_module:srlMod"                                                                                      ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                  ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; flags ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "flags[3..1]" have no fanouts ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs0" ;
++------+-------+----------+--------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                              ;
++------+-------+----------+--------------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                         ;
++------+-------+----------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba0" ;
++------+-------+----------+---------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                   ;
++------+-------+----------+---------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                              ;
++------+-------+----------+---------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_module:modulo"                                                                                                                                                                 ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                          ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; UC     ; Input  ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESULT ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                              ;
+; FLAGS  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                         ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -204,7 +302,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 03 23:03:32 2021
+    Info: Processing started: Sun Sep 05 17:45:38 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off experimento-1 -c experimento-1 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -242,16 +340,62 @@ Info (12021): Found 1 design units, including 1 entities, in source file onebitf
     Info (12023): Found entity 1: oneBitFullSubstractor_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbitsubstractor_module_tb.sv
     Info (12023): Found entity 1: nBitSubstractor_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module_tb.sv Line: 1
-Info (12127): Elaborating entity "nBitSubstractor_module_tb" for the top level hierarchy
-Info (10648): Verilog HDL Display System Task info at nBitSubstractor_module_tb.sv(10): Iniciando simulacion File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module_tb.sv Line: 10
-Info (12128): Elaborating entity "nBitSubstractor_module" for hierarchy "nBitSubstractor_module:modulo" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module_tb.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file alu_module.sv
+    Info (12023): Found entity 1: alu_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_module_tb.sv
+    Info (12023): Found entity 1: alu_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_module.sv
+    Info (12023): Found entity 1: decoder_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/decoder_module.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top_module.sv
+    Info (12023): Found entity 1: top_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/top_module.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at alu_module.sv(36): created implicit net for "temp_flag_slr" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 36
+Info (12127): Elaborating entity "alu_module_tb" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at alu_module_tb.sv(5): object "uc" assigned a value but never read File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 5
+Info (10648): Verilog HDL Display System Task info at alu_module_tb.sv(11): Iniciando simulacion File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 11
+Info (12128): Elaborating entity "alu_module" for hierarchy "alu_module:modulo" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 8
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(88): variable "temp_result_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 88
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(89): variable "temp_flag_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 89
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(93): variable "temp_result_substract" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 93
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(94): variable "temp_flag_substract" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 94
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(98): variable "temp_result_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 98
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(99): variable "temp_flag_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 99
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(103): variable "temp_result_or" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 103
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(104): variable "temp_flag_or" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 104
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(108): variable "temp_result_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 108
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(109): variable "temp_flag_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 109
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(113): variable "temp_result_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 113
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(114): variable "temp_flag_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 114
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(118): variable "temp_result_srl" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 118
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(119): variable "temp_flag_slr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 119
+Warning (10270): Verilog HDL Case Statement warning at alu_module.sv(86): incomplete case statement has no default case item File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 86
+Warning (10240): Verilog HDL Always Construct warning at alu_module.sv(39): inferring latch(es) for variable "RESULT", which holds its previous value in one or more paths through the always construct File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Warning (10240): Verilog HDL Always Construct warning at alu_module.sv(39): inferring latch(es) for variable "FLAGS", which holds its previous value in one or more paths through the always construct File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (10041): Inferred latch for "FLAGS[0]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (10041): Inferred latch for "FLAGS[1]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (10041): Inferred latch for "FLAGS[2]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (10041): Inferred latch for "FLAGS[3]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (10041): Inferred latch for "RESULT[0]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (10041): Inferred latch for "RESULT[1]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (10041): Inferred latch for "RESULT[2]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (10041): Inferred latch for "RESULT[3]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (12128): Elaborating entity "nBitAdder_module" for hierarchy "alu_module:modulo|nBitAdder_module:adderMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 30
+Warning (10235): Verilog HDL Always Construct warning at nBitAdder_module.sv(49): variable "c4" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 49
+Warning (10235): Verilog HDL Always Construct warning at nBitAdder_module.sv(51): variable "c4" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 51
+Info (12128): Elaborating entity "oneBitFullAdder_module" for hierarchy "alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba0" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 41
+Info (12128): Elaborating entity "nBitSubstractor_module" for hierarchy "alu_module:modulo|nBitSubstractor_module:subsMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 31
 Warning (10235): Verilog HDL Always Construct warning at nBitSubstractor_module.sv(49): variable "c4" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 49
 Warning (10235): Verilog HDL Always Construct warning at nBitSubstractor_module.sv(51): variable "c4" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 51
-Info (12128): Elaborating entity "oneBitFullSubstractor_module" for hierarchy "nBitSubstractor_module:modulo|oneBitFullSubstractor_module:obs0" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 41
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4765 megabytes
-    Info: Processing ended: Fri Sep 03 23:03:39 2021
-    Info: Elapsed time: 00:00:07
+Info (12128): Elaborating entity "oneBitFullSubstractor_module" for hierarchy "alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs0" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 41
+Info (12128): Elaborating entity "and_module" for hierarchy "alu_module:modulo|and_module:andMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 32
+Info (12128): Elaborating entity "or_module" for hierarchy "alu_module:modulo|or_module:orMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 33
+Info (12128): Elaborating entity "xor_module" for hierarchy "alu_module:modulo|xor_module:xorMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 34
+Info (12128): Elaborating entity "sll_module" for hierarchy "alu_module:modulo|sll_module:sllMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 35
+Info (12128): Elaborating entity "srl_module" for hierarchy "alu_module:modulo|srl_module:srlMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 36
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4764 megabytes
+    Info: Processing ended: Sun Sep 05 17:45:44 2021
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:16
 
 
