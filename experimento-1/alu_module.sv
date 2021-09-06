@@ -3,8 +3,8 @@ module alu_module #(parameter N=4)
 	input logic [N-1:0] A,
 	input logic [N-1:0] B,
 	input logic [2:0] UC,
-	output reg [N-1:0] RESULT,
-	output reg [3:0] FLAGS
+	output logic [N-1:0] RESULT,
+	output logic [3:0] FLAGS
 );
 
 
@@ -25,6 +25,12 @@ module alu_module #(parameter N=4)
   logic [3:0]temp_flag_xor;
   logic [3:0]temp_flag_sll;
   logic [3:0]temp_flag_srl;
+  
+  // Variable de resultado final y flag final
+  //Dentro de un always -> reg    fuera -> logic
+  logic [N-1:0]TRESULT;
+  logic [3:0]TFLAGS;
+  
   
   //"Instancias" de las operaciones 
 	nBitAdder_module adderMod (A, B, temp_result_add, temp_flag_add);//Suma
@@ -84,43 +90,53 @@ module alu_module #(parameter N=4)
 	*/		
 
       case (UC)
-        0 : begin 
-				 RESULT = temp_result_add;
-				 FLAGS = temp_flag_add;
+        1 : begin 
+				 TRESULT = temp_result_add;
+				 TFLAGS = temp_flag_add;
 				end
 
-        1 : begin 
-				 RESULT = temp_result_substract;
-				 FLAGS = temp_flag_substract;
+        2 : begin 
+				 TRESULT = temp_result_substract;
+				 TFLAGS = temp_flag_substract;
+
 				end
 		
-        2 : begin 
-				 RESULT = temp_result_and;
-				 FLAGS = temp_flag_and;
-				end
-
         3 : begin 
-				 RESULT = temp_result_or;
-				 FLAGS = temp_flag_or;
+				 TRESULT = temp_result_and;
+				 TFLAGS = temp_flag_and;
 				end
 
         4 : begin 
-				  RESULT = temp_result_xor;
-				 FLAGS = temp_flag_xor;
+				 TRESULT = temp_result_or;
+				 TFLAGS = temp_flag_or;
 				end
 
         5 : begin 
-				 RESULT = temp_result_sll;
-				 FLAGS = temp_flag_sll;
+				  TRESULT = temp_result_xor;
+				 TFLAGS = temp_flag_xor;
 				end
 
         6 : begin 
-				 RESULT = temp_result_srl;
-				 FLAGS = temp_flag_slr;
+				 TRESULT = temp_result_sll;
+				 TFLAGS = temp_flag_sll;
+				end
+
+        7 : begin 
+				 TRESULT = temp_result_srl;
+				 TFLAGS = temp_flag_slr;
+				end
+				
+			default : begin 
+				 TRESULT = 4'b0000;
+				 TFLAGS = 4'b0000;
 				end
 
       endcase
 		
 	end
+	
+	assign RESULT = TRESULT;
+	assign FLAGS = TFLAGS;
+	
 	 
 endmodule

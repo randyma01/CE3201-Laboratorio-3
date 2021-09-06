@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/simulation/modelsim
 valu_module
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1630958075
+Z2 !s110 1630961205
 !i10b 1
-!s100 5efc@f`ORFT6`fzGV1YdH1
+!s100 heUl<TWmX:bWKdGi@C0]Q1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IdgOd1g[dQcI<222XPZ0Lh3
+I;>KPC][]7?1<;`V:G?Whh3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1630738161
+w1630960698
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv
 !i122 9
-L0 1 126
+L0 1 142
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1630958075.000000
+Z6 !s108 1630961205.000000
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv|
 !i113 1
@@ -39,17 +39,17 @@ valu_module_tb
 R1
 R2
 !i10b 1
-!s100 [M2HE2Gl3HAIhgXY_dJJo1
+!s100 US:YDB`N_^A8GEK`:lQV`1
 R3
-IWQinAYzkS<_>36PFJaL>[3
+IQ2[UeTAn:WPfGo94n<G6l3
 R4
 S1
 R0
-w1630737170
+w1630961159
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv
-!i122 10
-L0 1 55
+!i122 11
+L0 1 60
 R5
 r1
 !s85 0
@@ -63,7 +63,7 @@ R8
 R9
 vand_module
 R1
-Z10 !s110 1630958074
+Z10 !s110 1630961204
 !i10b 1
 !s100 0J`zkC3n;]Mo:zUmBmVHW1
 R3
@@ -80,7 +80,7 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1630958074.000000
+Z11 !s108 1630961204.000000
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv|
 !i113 1
@@ -89,7 +89,7 @@ R8
 R9
 vnBitAdder_module
 R1
-R2
+R10
 !i10b 1
 !s100 J^P;Dm:9?3Wj9aCQ;FCdm1
 R3
@@ -106,7 +106,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv|
 !i113 1
@@ -124,7 +124,7 @@ I@TLoKzdC>zh`2cam>Ng6L2
 R4
 S1
 R0
-w1630957118
+w1630958146
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv
 !i122 8
@@ -143,7 +143,7 @@ R9
 nn@bit@substractor_module
 voneBitFullAdder_module
 R1
-R2
+R10
 !i10b 1
 !s100 =NbJ^fU<0f1Rf=@Z]zV`T3
 R3
@@ -160,7 +160,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv|
 !i113 1
@@ -170,7 +170,7 @@ R9
 none@bit@full@adder_module
 voneBitFullSubstractor_module
 R1
-R2
+R10
 !i10b 1
 !s100 @IzFDGeUMKZI@a;74;:2^3
 R3
@@ -187,7 +187,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv|
 !i113 1
@@ -249,7 +249,7 @@ R8
 R9
 vsrl_module
 R1
-R2
+R10
 !i10b 1
 !s100 33@b^Di?Z]jEMlleYBM;o1
 R3

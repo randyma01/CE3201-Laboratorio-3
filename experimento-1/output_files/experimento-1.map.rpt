@@ -1,5 +1,5 @@
 Analysis & Elaboration report for experimento-1
-Mon Sep 06 13:40:09 2021
+Mon Sep 06 14:46:09 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -50,7 +50,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Sep 06 13:40:09 2021       ;
+; Analysis & Elaboration Status ; Successful - Mon Sep 06 14:46:09 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; experimento-1                               ;
 ; Top-level Entity Name         ; alu_module_tb                               ;
@@ -292,7 +292,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; UC     ; Input  ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; RESULT ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                              ;
-; FLAGS  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                         ;
+; FLAGS  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                              ;
 +--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -302,7 +302,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 06 13:39:57 2021
+    Info: Processing started: Mon Sep 06 14:46:02 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off experimento-1 -c experimento-1 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -348,54 +348,42 @@ Info (12021): Found 1 design units, including 1 entities, in source file decoder
     Info (12023): Found entity 1: decoder_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/decoder_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top_module.sv
     Info (12023): Found entity 1: top_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/top_module.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at alu_module.sv(36): created implicit net for "temp_flag_slr" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 36
+Warning (10236): Verilog HDL Implicit Net warning at alu_module.sv(42): created implicit net for "temp_flag_slr" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 42
 Info (12127): Elaborating entity "alu_module_tb" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at alu_module_tb.sv(5): object "uc" assigned a value but never read File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 5
 Info (10648): Verilog HDL Display System Task info at alu_module_tb.sv(11): Iniciando simulacion File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 11
 Info (12128): Elaborating entity "alu_module" for hierarchy "alu_module:modulo" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 8
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(88): variable "temp_result_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 88
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(89): variable "temp_flag_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 89
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(93): variable "temp_result_substract" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 93
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(94): variable "temp_flag_substract" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 94
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(98): variable "temp_result_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 98
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(99): variable "temp_flag_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 99
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(103): variable "temp_result_or" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 103
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(104): variable "temp_flag_or" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 104
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(108): variable "temp_result_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 108
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(109): variable "temp_flag_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 109
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(113): variable "temp_result_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 113
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(114): variable "temp_flag_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 114
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(118): variable "temp_result_srl" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 118
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(119): variable "temp_flag_slr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 119
-Warning (10270): Verilog HDL Case Statement warning at alu_module.sv(86): incomplete case statement has no default case item File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 86
-Warning (10240): Verilog HDL Always Construct warning at alu_module.sv(39): inferring latch(es) for variable "RESULT", which holds its previous value in one or more paths through the always construct File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Warning (10240): Verilog HDL Always Construct warning at alu_module.sv(39): inferring latch(es) for variable "FLAGS", which holds its previous value in one or more paths through the always construct File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Info (10041): Inferred latch for "FLAGS[0]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Info (10041): Inferred latch for "FLAGS[1]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Info (10041): Inferred latch for "FLAGS[2]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Info (10041): Inferred latch for "FLAGS[3]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Info (10041): Inferred latch for "RESULT[0]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Info (10041): Inferred latch for "RESULT[1]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Info (10041): Inferred latch for "RESULT[2]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Info (10041): Inferred latch for "RESULT[3]" at alu_module.sv(39) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Info (12128): Elaborating entity "nBitAdder_module" for hierarchy "alu_module:modulo|nBitAdder_module:adderMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 30
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(94): variable "temp_result_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 94
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(95): variable "temp_flag_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 95
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(99): variable "temp_result_substract" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 99
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(100): variable "temp_flag_substract" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 100
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(105): variable "temp_result_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 105
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(106): variable "temp_flag_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 106
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(110): variable "temp_result_or" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 110
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(111): variable "temp_flag_or" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 111
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(115): variable "temp_result_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 115
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(116): variable "temp_flag_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 116
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(120): variable "temp_result_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 120
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(121): variable "temp_flag_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 121
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(125): variable "temp_result_srl" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 125
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(126): variable "temp_flag_slr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 126
+Info (12128): Elaborating entity "nBitAdder_module" for hierarchy "alu_module:modulo|nBitAdder_module:adderMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 36
 Warning (10235): Verilog HDL Always Construct warning at nBitAdder_module.sv(26): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 26
 Warning (10235): Verilog HDL Always Construct warning at nBitAdder_module.sv(28): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 28
 Info (12128): Elaborating entity "oneBitFullAdder_module" for hierarchy "alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba0" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 18
-Info (12128): Elaborating entity "nBitSubstractor_module" for hierarchy "alu_module:modulo|nBitSubstractor_module:subsMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 31
+Info (12128): Elaborating entity "nBitSubstractor_module" for hierarchy "alu_module:modulo|nBitSubstractor_module:subsMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 37
 Warning (10235): Verilog HDL Always Construct warning at nBitSubstractor_module.sv(25): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 25
 Warning (10235): Verilog HDL Always Construct warning at nBitSubstractor_module.sv(27): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 27
 Info (12128): Elaborating entity "oneBitFullSubstractor_module" for hierarchy "alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:oba0" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 17
-Info (12128): Elaborating entity "and_module" for hierarchy "alu_module:modulo|and_module:andMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 32
-Info (12128): Elaborating entity "or_module" for hierarchy "alu_module:modulo|or_module:orMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 33
-Info (12128): Elaborating entity "xor_module" for hierarchy "alu_module:modulo|xor_module:xorMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 34
-Info (12128): Elaborating entity "sll_module" for hierarchy "alu_module:modulo|sll_module:sllMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 35
-Info (12128): Elaborating entity "srl_module" for hierarchy "alu_module:modulo|srl_module:srlMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 36
+Info (12128): Elaborating entity "and_module" for hierarchy "alu_module:modulo|and_module:andMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 38
+Info (12128): Elaborating entity "or_module" for hierarchy "alu_module:modulo|or_module:orMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (12128): Elaborating entity "xor_module" for hierarchy "alu_module:modulo|xor_module:xorMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 40
+Info (12128): Elaborating entity "sll_module" for hierarchy "alu_module:modulo|sll_module:sllMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 41
+Info (12128): Elaborating entity "srl_module" for hierarchy "alu_module:modulo|srl_module:srlMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 42
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4756 megabytes
-    Info: Processing ended: Mon Sep 06 13:40:09 2021
-    Info: Elapsed time: 00:00:12
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Mon Sep 06 14:46:09 2021
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:17
 
 
