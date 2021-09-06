@@ -48,18 +48,18 @@ FLAGS[3] <= FLAGS[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod
-a[0] => oneBitFullAdder_module:oba0.a
+a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
-b[0] => oneBitFullAdder_module:oba0.b
+b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
-result[0] <= oneBitFullAdder_module:oba0.res
-result[1] <= oneBitFullAdder_module:oba1.port3
-result[2] <= oneBitFullAdder_module:oba2.port3
-result[3] <= oneBitFullAdder_module:oba3.port3
+result[0] <= oneBitFullAdder_module:oba0.port3
+result[1] <= oneBitFullAdder_module:forloop[1].obaN.port3
+result[2] <= oneBitFullAdder_module:forloop[2].obaN.port3
+result[3] <= oneBitFullAdder_module:forloop[3].obaN.port3
 flags[0] <= always0.DB_MAX_OUTPUT_PORT_TYPE
 flags[1] <= flags.DB_MAX_OUTPUT_PORT_TYPE
 flags[2] <= <GND>
@@ -86,7 +86,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba1
+|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:forloop[1].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -106,7 +106,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba2
+|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:forloop[2].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -126,7 +126,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba3
+|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:forloop[3].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -147,25 +147,25 @@ cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod
-a[0] => oneBitFullSubstractor_module:obs0.a
+a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
-b[0] => oneBitFullSubstractor_module:obs0.b
+b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
-result[0] <= oneBitFullSubstractor_module:obs0.res
-result[1] <= oneBitFullSubstractor_module:obs1.port3
-result[2] <= oneBitFullSubstractor_module:obs2.port3
-result[3] <= oneBitFullSubstractor_module:obs3.port3
+result[0] <= oneBitFullSubstractor_module:oba0.port3
+result[1] <= oneBitFullSubstractor_module:forloop[1].obaN.port3
+result[2] <= oneBitFullSubstractor_module:forloop[2].obaN.port3
+result[3] <= oneBitFullSubstractor_module:forloop[3].obaN.port3
 flags[0] <= always0.DB_MAX_OUTPUT_PORT_TYPE
 flags[1] <= <GND>
 flags[2] <= flags.DB_MAX_OUTPUT_PORT_TYPE
 flags[3] <= <GND>
 
 
-|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs0
+|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:oba0
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -186,7 +186,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs1
+|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:forloop[1].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -207,7 +207,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs2
+|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:forloop[2].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -228,7 +228,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:obs3
+|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:forloop[3].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0

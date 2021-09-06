@@ -12,61 +12,144 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:45:52 on Sep 05,2021
+# Start time: 13:54:34 on Sep 06,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv 
 # -- Compiling module and_module
 # 
 # Top level modules:
 # 	and_module
-# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
+# End time: 13:54:34 on Sep 06,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:45:52 on Sep 05,2021
+# Start time: 13:54:34 on Sep 06,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module.sv 
 # -- Compiling module or_module
 # 
 # Top level modules:
 # 	or_module
-# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
+# End time: 13:54:34 on Sep 06,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:45:52 on Sep 05,2021
+# Start time: 13:54:34 on Sep 06,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module.sv 
 # -- Compiling module xor_module
 # 
 # Top level modules:
 # 	xor_module
-# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
+# End time: 13:54:34 on Sep 06,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:45:52 on Sep 05,2021
+# Start time: 13:54:34 on Sep 06,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module.sv 
 # -- Compiling module sll_module
 # 
 # Top level modules:
 # 	sll_module
-# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
+# End time: 13:54:34 on Sep 06,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:45:52 on Sep 05,2021
+# Start time: 13:54:34 on Sep 06,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv 
 # -- Compiling module srl_module
 # 
 # Top level modules:
 # 	srl_module
-# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
+# End time: 13:54:35 on Sep 06,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:45:52 on Sep 05,2021
+# Start time: 13:54:35 on Sep 06,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv 
 # -- Compiling module oneBitFullAdder_module
 # 
 # Top level modules:
 # 	oneBitFullAdder_module
-# End time: 17:45:52 on Sep 05,2021, Elapsed time: 0:00:00
+# End time: 13:54:35 on Sep 06,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:54:35 on Sep 06,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv 
+# -- Compiling module nBitAdder_module
+# 
+# Top level modules:
+# 	nBitAdder_module
+# End time: 13:54:35 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:54:35 on Sep 06,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv 
+# -- Compiling module oneBitFullSubstractor_module
+# 
+# Top level modules:
+# 	oneBitFullSubstractor_module
+# End time: 13:54:35 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:54:35 on Sep 06,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv 
+# -- Compiling module nBitSubstractor_module
+# 
+# Top level modules:
+# 	nBitSubstractor_module
+# End time: 13:54:35 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:54:35 on Sep 06,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv 
+# -- Compiling module alu_module
+# 
+# Top level modules:
+# 	alu_module
+# End time: 13:54:35 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1 {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:54:35 on Sep 06,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1" C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv 
+# -- Compiling module alu_module_tb
+# 
+# Top level modules:
+# 	alu_module_tb
+# End time: 13:54:35 on Sep 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.alu_module_tb
+# vsim work.alu_module_tb 
+# Start time: 13:54:40 on Sep 06,2021
+# Loading sv_std.std
+# Loading work.alu_module_tb
+# Loading work.alu_module
+# Loading work.nBitAdder_module
+# Loading work.oneBitFullAdder_module
+# Loading work.nBitSubstractor_module
+# Loading work.oneBitFullSubstractor_module
+# Loading work.and_module
+# Loading work.or_module
+# Loading work.xor_module
+# Loading work.sll_module
+# Loading work.srl_module
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'modulo'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_module_tb/modulo File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'UC'. The port definition is at: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_module_tb/modulo File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 8
+# ** Warning: (vsim-3722) C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv(8): [TFMPC] - Missing connection for port 'FLAGS'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags'. The port definition is at: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_module_tb/modulo/srlMod File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 36
+add wave -position end  sim:/alu_module_tb/a
+add wave -position end  sim:/alu_module_tb/b
+add wave -position end  sim:/alu_module_tb/uc
+add wave -position end  sim:/alu_module_tb/r
+add wave -position end  sim:/alu_module_tb/f
+run
+# Iniciando simulacion
+run
+# End time: 13:55:16 on Sep 06,2021, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 4
