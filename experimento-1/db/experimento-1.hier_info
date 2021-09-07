@@ -1,7 +1,29 @@
-|alu_module_tb
+|top_module
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+uc[0] => uc[0].IN1
+uc[1] => uc[1].IN1
+uc[2] => uc[2].IN1
+results[0] <= decoder_module:deco.port1
+results[1] <= decoder_module:deco.port1
+results[2] <= decoder_module:deco.port1
+results[3] <= decoder_module:deco.port1
+results[4] <= decoder_module:deco.port1
+results[5] <= decoder_module:deco.port1
+results[6] <= decoder_module:deco.port1
+flags[0] <= alu_module:alu.port4
+flags[1] <= alu_module:alu.port4
+flags[2] <= alu_module:alu.port4
+flags[3] <= alu_module:alu.port4
 
 
-|alu_module_tb|alu_module:modulo
+|top_module|alu_module:alu
 A[0] => A[0].IN7
 A[1] => A[1].IN7
 A[2] => A[2].IN7
@@ -44,7 +66,7 @@ FLAGS[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
 FLAGS[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod
+|top_module|alu_module:alu|nBitAdder_module:adderMod
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -63,7 +85,7 @@ flags[2] <= <GND>
 flags[3] <= <GND>
 
 
-|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:oba0
+|top_module|alu_module:alu|nBitAdder_module:adderMod|oneBitFullAdder_module:oba0
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -83,7 +105,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:forloop[1].obaN
+|top_module|alu_module:alu|nBitAdder_module:adderMod|oneBitFullAdder_module:forloop[1].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -103,7 +125,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:forloop[2].obaN
+|top_module|alu_module:alu|nBitAdder_module:adderMod|oneBitFullAdder_module:forloop[2].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -123,7 +145,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitAdder_module:adderMod|oneBitFullAdder_module:forloop[3].obaN
+|top_module|alu_module:alu|nBitAdder_module:adderMod|oneBitFullAdder_module:forloop[3].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -143,7 +165,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod
+|top_module|alu_module:alu|nBitSubstractor_module:subsMod
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -162,7 +184,7 @@ flags[2] <= flags.DB_MAX_OUTPUT_PORT_TYPE
 flags[3] <= <GND>
 
 
-|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:oba0
+|top_module|alu_module:alu|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:oba0
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -183,7 +205,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:forloop[1].obaN
+|top_module|alu_module:alu|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:forloop[1].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -204,7 +226,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:forloop[2].obaN
+|top_module|alu_module:alu|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:forloop[2].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -225,7 +247,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:forloop[3].obaN
+|top_module|alu_module:alu|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:forloop[3].obaN
 a => res.IN0
 a => res.IN0
 a => res.IN0
@@ -246,7 +268,7 @@ res <= res.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|alu_module_tb|alu_module:modulo|and_module:andMod
+|top_module|alu_module:alu|and_module:andMod
 a[0] => WideOr0.IN0
 a[1] => WideOr0.IN1
 a[2] => WideOr0.IN2
@@ -265,7 +287,7 @@ flags[2] <= <GND>
 flags[3] <= <GND>
 
 
-|alu_module_tb|alu_module:modulo|or_module:orMod
+|top_module|alu_module:alu|or_module:orMod
 a[0] => WideOr0.IN0
 a[1] => WideOr0.IN1
 a[2] => WideOr0.IN2
@@ -284,7 +306,7 @@ flags[2] <= <GND>
 flags[3] <= <GND>
 
 
-|alu_module_tb|alu_module:modulo|xor_module:xorMod
+|top_module|alu_module:alu|xor_module:xorMod
 a[0] => result.IN0
 a[1] => result.IN0
 a[2] => result.IN0
@@ -303,7 +325,7 @@ flags[2] <= <GND>
 flags[3] <= <GND>
 
 
-|alu_module_tb|alu_module:modulo|sll_module:sllMod
+|top_module|alu_module:alu|sll_module:sllMod
 a[0] => ShiftLeft0.IN4
 a[1] => ShiftLeft0.IN3
 a[2] => ShiftLeft0.IN2
@@ -322,7 +344,7 @@ flags[2] <= <GND>
 flags[3] <= <GND>
 
 
-|alu_module_tb|alu_module:modulo|srl_module:srlMod
+|top_module|alu_module:alu|srl_module:srlMod
 a[0] => ShiftRight0.IN4
 a[1] => ShiftRight0.IN3
 a[2] => ShiftRight0.IN2
@@ -339,5 +361,19 @@ flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 flags[1] <= <GND>
 flags[2] <= <GND>
 flags[3] <= <GND>
+
+
+|top_module|decoder_module:deco
+results[0] => Decoder0.IN3
+results[1] => Decoder0.IN2
+results[2] => Decoder0.IN1
+results[3] => Decoder0.IN0
+display[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
