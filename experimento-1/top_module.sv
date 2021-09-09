@@ -1,4 +1,4 @@
-module top_module #(parameter N=256)
+module top_module #(parameter N=4)
 (
   input logic clk,
   input logic rst,

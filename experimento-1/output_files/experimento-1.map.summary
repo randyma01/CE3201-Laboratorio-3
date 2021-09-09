@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Tue Sep 07 20:36:29 2021
+Analysis & Synthesis Status : Successful - Thu Sep 09 09:36:28 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : experimento-1
-Top-level Entity Name : top_module
+Top-level Entity Name : testing_bits_module
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 12
-Total pins : 528
+Total registers : 0
+Total pins : 288
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
