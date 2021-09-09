@@ -1,0 +1,42 @@
+module top_module_registers_tb #(parameter N=4)();
+
+  logic clk; 
+  logic rst;
+  
+  logic [N-1:0] a;
+  logic [N-1:0] b;
+  logic [N-1:0] uc;
+  logic [N-1:0] r;
+  logic [3:0] f;
+
+  top_module modulo(clk, rst, a, b, uc, r);
+
+  always
+    begin
+	 
+	   clk = 0; 
+		#1;
+		
+		clk = 1;
+		#1;
+		
+  end
+
+  initial begin
+    a=4'b0000;
+	 b=4'b0000;
+	 uc=3'b000;
+	 #40
+	
+	 a=4'b0001;
+	 b=4'b0001;
+	 uc=3'b010;
+	 #40
+	
+	 a=4'b0001;
+	 b=4'b0001;
+	 uc=3'b001;
+	 #40
+
+  end
+endmodule 

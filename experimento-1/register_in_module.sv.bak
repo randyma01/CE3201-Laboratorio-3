@@ -1,0 +1,21 @@
+module register_in_module #(parameter N=4)
+(
+  input logic clck,
+  input logic rst,
+  input logic [N-1:0] a, 
+  input logic [N-1:0] b,
+  output logic [N-1:0] new_a, 
+  output logic [N-1:-]new_b
+);
+	
+  always_ff @(posedge clk, posedge rst)
+    begin
+      if (rst)
+	     a = 0;
+		  b = 0;
+	   else
+	     new_a = a;
+		  new_b = b;
+	 end
+			
+endmodule 

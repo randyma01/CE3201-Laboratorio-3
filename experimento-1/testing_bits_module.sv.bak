@@ -1,0 +1,11 @@
+module testing_bits_module #(parameter N=256)
+(
+  input logic [N-1:0] a,
+  input logic [N-1:0] b,
+  input logic [N-1:0] y
+);
+
+
+  assign y = a && b;
+  
+endmodule 

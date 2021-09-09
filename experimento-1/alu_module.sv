@@ -1,4 +1,4 @@
-module alu_module #(parameter N=4)
+module alu_module #(parameter N=256)
 (
 	input logic [N-1:0] A,
 	input logic [N-1:0] B,

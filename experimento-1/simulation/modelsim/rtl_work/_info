@@ -8,111 +8,85 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/simulation/modelsim
+Z0 dC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/simulation/modelsim
 valu_module
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1630961205
+Z2 !s110 1631067405
 !i10b 1
 !s100 heUl<TWmX:bWKdGi@C0]Q1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I;>KPC][]7?1<;`V:G?Whh3
+Iz9_?Y;EJ<?DbmWBQiE^W`2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1630960698
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv
+Z5 w1631035154
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv
 !i122 9
 L0 1 142
-Z5 OV;L;2020.1;71
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1630961205.000000
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv|
+Z7 !s108 1631067405.000000
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1
-Z9 tCvgOpt 0
-valu_module_tb
-R1
-R2
-!i10b 1
-!s100 US:YDB`N_^A8GEK`:lQV`1
-R3
-IQ2[UeTAn:WPfGo94n<G6l3
-R4
-S1
-R0
-w1630961159
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv
-!i122 11
-L0 1 60
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv|
-!i113 1
-R7
-R8
-R9
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1
+Z10 tCvgOpt 0
 vand_module
 R1
-Z10 !s110 1630961204
+Z11 !s110 1631067404
 !i10b 1
 !s100 0J`zkC3n;]Mo:zUmBmVHW1
 R3
-I6Ejgz`FL@K`TV2VbYzn3?2
+IGoN=RGVBc=DM77:8cOhN02
 R4
 S1
 R0
-w1630713309
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv
+Z12 w1630770977
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/and_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/and_module.sv
 !i122 0
 L0 1 21
-R5
+R6
 r1
 !s85 0
 31
-Z11 !s108 1630961204.000000
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv|
+Z13 !s108 1631067404.000000
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/and_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/and_module.sv|
 !i113 1
-R7
 R8
 R9
+R10
 vnBitAdder_module
 R1
-R10
+R2
 !i10b 1
 !s100 J^P;Dm:9?3Wj9aCQ;FCdm1
 R3
-IO@n;B3h4;@H[0ldP_G45L0
+II:3`ndI@Y=iaBWgT9]QIJ1
 R4
 S1
 R0
-w1630957014
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv
-!i122 6
-Z12 L0 1 59
 R5
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv
+!i122 6
+Z14 L0 1 59
+R6
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv|
-!i113 1
 R7
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv|
+!i113 1
 R8
 R9
+R10
 nn@bit@adder_module
 vnBitSubstractor_module
 R1
@@ -120,182 +94,286 @@ R2
 !i10b 1
 !s100 k85oXVb>[kkV`nK;Q43Z00
 R3
-I@TLoKzdC>zh`2cam>Ng6L2
+ILTK<Y?cUW65:AMBTfTigQ0
 R4
 S1
 R0
-w1630958146
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv
-!i122 8
-R12
 R5
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv
+!i122 8
+R14
+R6
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv|
-!i113 1
 R7
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv|
+!i113 1
 R8
 R9
+R10
 nn@bit@substractor_module
 voneBitFullAdder_module
 R1
-R10
+R2
 !i10b 1
 !s100 =NbJ^fU<0f1Rf=@Z]zV`T3
 R3
-IaF1UbOB0z5EV=ljn_;]GS1
+IZo[:an0DO90Z]zK7=^2Q:3
 R4
 S1
 R0
-w1630729245
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv
+R12
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv
 !i122 5
-Z13 L0 1 13
-R5
+Z15 L0 1 13
+R6
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv|
-!i113 1
 R7
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv|
+!i113 1
 R8
 R9
+R10
 none@bit@full@adder_module
 voneBitFullSubstractor_module
 R1
-R10
+R2
 !i10b 1
 !s100 @IzFDGeUMKZI@a;74;:2^3
 R3
-I93z2[g3jQ>l:h5=[_:hF31
+I6Fn3S=z`BgP0;<;do;J=E3
 R4
 S1
 R0
-w1630730410
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv
+R12
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv
 !i122 7
-R13
-R5
+R15
+R6
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv|
-!i113 1
 R7
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv|
+!i113 1
 R8
 R9
+R10
 none@bit@full@substractor_module
 vor_module
 R1
-R10
+R11
 !i10b 1
 !s100 1RkY>RMgcm7gI5A?e=hg@3
 R3
-I4KPLR98[z0l@S3SlXV7;Y3
+ICgZ@ck7Lf3kcA5Tgi_b<d0
 R4
 S1
 R0
-w1630711327
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module.sv
+R12
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/or_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/or_module.sv
 !i122 1
-Z14 L0 1 19
-R5
+Z16 L0 1 19
+R6
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module.sv|
+R13
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/or_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/or_module.sv|
 !i113 1
-R7
 R8
 R9
+R10
+vregister_in_module
+R1
+Z17 !s110 1631067406
+!i10b 1
+!s100 YTSJI_KJ02_XzoKmih>650
+R3
+IThgkS8gOaE]QYjZhje=DI0
+R4
+S1
+R0
+w1631064280
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/register_in_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/register_in_module.sv
+!i122 11
+L0 1 25
+R6
+r1
+!s85 0
+31
+Z18 !s108 1631067406.000000
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/register_in_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/register_in_module.sv|
+!i113 1
+R8
+R9
+R10
+vregister_out_module
+R1
+R17
+!i10b 1
+!s100 Do4P:AM6DD3EW;XoceF:@1
+R3
+I8d8B321=f:Z2@I[en72]P3
+R4
+S1
+R0
+w1631064286
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/resgister_out_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/resgister_out_module.sv
+!i122 12
+L0 1 17
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/resgister_out_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/resgister_out_module.sv|
+!i113 1
+R8
+R9
+R10
 vsll_module
 R1
-R10
+R11
 !i10b 1
 !s100 l9DPiSjBF:a[i^7O9nf101
 R3
-Ih:`<PLM]bW`3AlCjT;63W2
+IaiFFHiCa]MTG9WX<0S^Nz3
 R4
 S1
 R0
-w1630605284
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module.sv
+Z19 w1630770978
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/sll_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/sll_module.sv
 !i122 3
-R14
-R5
+R16
+R6
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module.sv|
+R13
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/sll_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/sll_module.sv|
 !i113 1
-R7
 R8
 R9
+R10
 vsrl_module
 R1
-R10
+R2
 !i10b 1
 !s100 33@b^Di?Z]jEMlleYBM;o1
 R3
-IWUiZ=L@=Sm=^0cQC52A7m2
+Ib@K2]PJ^KZEEOi_Y0j9Cc0
 R4
 S1
 R0
-w1630605356
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv
+R19
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/srl_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/srl_module.sv
 !i122 4
-R14
-R5
+R16
+R6
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv|
-!i113 1
 R7
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/srl_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/srl_module.sv|
+!i113 1
 R8
 R9
+R10
+vtop_module
+R1
+R2
+!i10b 1
+!s100 @h0cc3d1BJT9D2PHIn:M20
+R3
+IfJdeJ9DZAU]31RLJ>ON2e3
+R4
+S1
+R0
+w1631066987
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module.sv
+!i122 10
+L0 1 27
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module.sv|
+!i113 1
+R8
+R9
+R10
+vtop_module_register_tb
+R1
+R17
+!i10b 1
+!s100 zO2?JDB:ef<fEdl<LBJBK0
+R3
+IcOSZHUZChUfG7eN^4lNA41
+R4
+S1
+R0
+w1631067008
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module_register_tb.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module_register_tb.sv
+!i122 13
+L0 1 42
+R6
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module_register_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module_register_tb.sv|
+!i113 1
+R8
+R9
+R10
 vxor_module
 R1
-R10
+R11
 !i10b 1
 !s100 FTgeR8[[R_VHhLTFBK<9G2
 R3
-IU5N2fAB0;DfCJFEPd?PTQ0
+IH3N2h`kM]O?Eo_iOMJVK41
 R4
 S1
 R0
-w1630604418
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module.sv
+R19
+8C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/xor_module.sv
+FC:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/xor_module.sv
 !i122 2
-R14
-R5
+R16
+R6
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module.sv|
+R13
+!s107 C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/xor_module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1|C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/xor_module.sv|
 !i113 1
-R7
 R8
 R9
+R10
