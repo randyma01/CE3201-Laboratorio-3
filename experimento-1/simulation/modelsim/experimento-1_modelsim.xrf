@@ -23,6 +23,7 @@ source_file = 1, C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_
 source_file = 1, C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/register_in_module.sv
 source_file = 1, C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/resgister_out_module.sv
 source_file = 1, C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module_register_tb.sv
+source_file = 1, C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/testing_bits_module.sv
 source_file = 1, C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/db/experimento-1.cbx.xml
 design_name = top_module
 instance = comp, \results[0]~output , results[0]~output, top_module, 1

@@ -1,4 +1,4 @@
-module top_module_register_tb #(parameter N=256)();
+module top_module_register_tb #(parameter N=4)();
 
   logic clk; 
   logic rst;

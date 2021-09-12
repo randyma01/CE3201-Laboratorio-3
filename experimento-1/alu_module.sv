@@ -1,4 +1,4 @@
-module alu_module #(parameter N=256)
+module alu_module #(parameter N=4)
 (
 	input logic [N-1:0] A,
 	input logic [N-1:0] B,
@@ -43,100 +43,56 @@ module alu_module #(parameter N=256)
 
   
     always @(UC)
+	
+      begin
+
+        case (UC)
+          1 : begin 
+				   TRESULT = temp_result_add;
+				   TFLAGS = temp_flag_add;
+				  end
+
+          2 : begin 
+				   TRESULT = temp_result_substract;
+				   TFLAGS = temp_flag_substract;
+				  end
 		
+          3 : begin 
+				   TRESULT = temp_result_and;
+				   TFLAGS = temp_flag_and;
+				  end
 
-    begin
-	/* 
-		if (UC==3'b000)
-			begin
-				RESULT = temp_result_add;
-				FLAGS = temp_flag_add;
-			end	 
-		else if (UC==3'b001)
-			begin
-				 RESULT = temp_result_add;
-				 FLAGS = temp_flag_add;
-			end
-		else if (UC==3'b010)
-			begin
-				 RESULT = temp_result_add;
-				 FLAGS = temp_flag_add;
-			end
-		else if (UC==3'b011)
-			begin
-				 RESULT = temp_result_add;
-				 FLAGS = temp_flag_add;
-			end
-		else if (UC==3'b100)
-			begin
-				 RESULT = temp_result_add;
-				 FLAGS = temp_flag_add;
-			end
-		else if (UC==3'b101)
-			begin
-				 RESULT = temp_result_add;
-				 FLAGS = temp_flag_add;
-			end
-		else if (UC==3'b110)
-			begin
-				 RESULT = temp_result_add;
-				 FLAGS = temp_flag_add;
-			end
-		else if (UC==3'b111)
-			begin
-				 RESULT = temp_result_add;
-				 FLAGS = temp_flag_add;
-			end
-	*/		
+          4 : begin 
+				   TRESULT = temp_result_or;
+				   TFLAGS = temp_flag_or;
+				  end
 
-      case (UC)
-        1 : begin 
-				 TRESULT = temp_result_add;
-				 TFLAGS = temp_flag_add;
-				end
+          5 : begin 
+				   TRESULT = temp_result_xor;
+				   TFLAGS = temp_flag_xor;
+				  end
 
-        2 : begin 
-				 TRESULT = temp_result_substract;
-				 TFLAGS = temp_flag_substract;
+          6 : begin 
+				  TRESULT = temp_result_sll;
+				   TFLAGS = temp_flag_sll;
+				  end
 
-				end
-		
-        3 : begin 
-				 TRESULT = temp_result_and;
-				 TFLAGS = temp_flag_and;
-				end
-
-        4 : begin 
-				 TRESULT = temp_result_or;
-				 TFLAGS = temp_flag_or;
-				end
-
-        5 : begin 
-				  TRESULT = temp_result_xor;
-				 TFLAGS = temp_flag_xor;
-				end
-
-        6 : begin 
-				 TRESULT = temp_result_sll;
-				 TFLAGS = temp_flag_sll;
-				end
-
-        7 : begin 
-				 TRESULT = temp_result_srl;
-				 TFLAGS = temp_flag_slr;
-				end
+          7 : begin 
+				   TRESULT = temp_result_srl;
+				   TFLAGS = temp_flag_slr;
+				  end
 				
-			default : begin 
-				 TRESULT = 4'b0000;
-				 TFLAGS = 4'b0000;
-				end
+			  default : begin 
+				   TRESULT = 4'b0000;
+				   TFLAGS = 4'b0000;
+				  end
 
-      endcase
+        endcase
 		
-	end
+	  end
 	
 	assign RESULT = TRESULT;
 	assign FLAGS = TFLAGS;
 	
 	 
-endmodule
+endmodule 
