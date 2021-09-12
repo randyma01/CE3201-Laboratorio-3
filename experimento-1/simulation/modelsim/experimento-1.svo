@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "09/06/2021 21:48:00"
+// DATE "09/12/2021 10:21:32"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -35,11 +35,11 @@ module top_module (
 	uc,
 	results,
 	flags);
-input 	logic [3:0] a ;
-input 	logic [3:0] b ;
-input 	logic [2:0] uc ;
-output 	logic [6:0] results ;
-output 	logic [3:0] flags ;
+input 	[3:0] a;
+input 	[3:0] b;
+input 	[2:0] uc;
+output 	[6:0] results;
+output 	[3:0] flags;
 
 // Design Ports Information
 // results[0]	=>  Location: PIN_AE26,	 I/O Standard: 2.5 V,	 Current Strength: Default

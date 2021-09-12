@@ -10,17 +10,17 @@ b[3] => b[3].IN1
 uc[0] => uc[0].IN1
 uc[1] => uc[1].IN1
 uc[2] => uc[2].IN1
-results[0] <= decoder_module:deco.port1
-results[1] <= decoder_module:deco.port1
-results[2] <= decoder_module:deco.port1
-results[3] <= decoder_module:deco.port1
-results[4] <= decoder_module:deco.port1
-results[5] <= decoder_module:deco.port1
-results[6] <= decoder_module:deco.port1
-flags[0] <= alu_module:alu.port4
-flags[1] <= alu_module:alu.port4
-flags[2] <= alu_module:alu.port4
-flags[3] <= alu_module:alu.port4
+results[0] << decoder_module:deco.port1
+results[1] << decoder_module:deco.port1
+results[2] << decoder_module:deco.port1
+results[3] << decoder_module:deco.port1
+results[4] << decoder_module:deco.port1
+results[5] << decoder_module:deco.port1
+results[6] << decoder_module:deco.port1
+flags[0] << alu_module:alu.port4
+flags[1] << alu_module:alu.port4
+flags[2] << alu_module:alu.port4
+flags[3] << alu_module:alu.port4
 
 
 |top_module|alu_module:alu

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for experimento-1
-Mon Sep 06 21:47:19 2021
+Sun Sep 12 10:20:39 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Sep 06 21:47:19 2021       ;
+; Analysis & Synthesis Status     ; Successful - Sun Sep 12 10:20:39 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; experimento-1                               ;
 ; Top-level Entity Name           ; top_module                                  ;
@@ -169,8 +169,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -180,24 +180,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
-; and_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv                   ;         ;
-; or_module.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module.sv                    ;         ;
-; xor_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module.sv                   ;         ;
-; sll_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module.sv                   ;         ;
-; srl_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv                   ;         ;
-; oneBitFullAdder_module.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv       ;         ;
-; nBitAdder_module.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv             ;         ;
-; oneBitFullSubstractor_module.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv ;         ;
-; nBitSubstractor_module.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv       ;         ;
-; alu_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv                   ;         ;
-; decoder_module.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/decoder_module.sv               ;         ;
-; top_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/top_module.sv                   ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
+; and_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/and_module.sv                   ;         ;
+; or_module.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/or_module.sv                    ;         ;
+; xor_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/xor_module.sv                   ;         ;
+; sll_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/sll_module.sv                   ;         ;
+; srl_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/srl_module.sv                   ;         ;
+; oneBitFullAdder_module.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv       ;         ;
+; nBitAdder_module.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv             ;         ;
+; oneBitFullSubstractor_module.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv ;         ;
+; nBitSubstractor_module.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv       ;         ;
+; alu_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv                   ;         ;
+; decoder_module.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/decoder_module.sv               ;         ;
+; top_module.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module.sv                   ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -444,86 +444,86 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 06 21:47:12 2021
+    Info: Processing started: Sun Sep 12 10:20:28 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off experimento-1 -c experimento-1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file and_module.sv
-    Info (12023): Found entity 1: and_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module.sv Line: 1
+    Info (12023): Found entity 1: and_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/and_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file or_module.sv
-    Info (12023): Found entity 1: or_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module.sv Line: 1
+    Info (12023): Found entity 1: or_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/or_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file and_module_tb.sv
-    Info (12023): Found entity 1: and_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/and_module_tb.sv Line: 1
+    Info (12023): Found entity 1: and_module_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/and_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file xor_module.sv
-    Info (12023): Found entity 1: xor_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module.sv Line: 1
+    Info (12023): Found entity 1: xor_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/xor_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file xor_module_tb.sv
-    Info (12023): Found entity 1: xor_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/xor_module_tb.sv Line: 1
+    Info (12023): Found entity 1: xor_module_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/xor_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file or_module_tb.sv
-    Info (12023): Found entity 1: or_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/or_module_tb.sv Line: 1
+    Info (12023): Found entity 1: or_module_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/or_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sll_module.sv
-    Info (12023): Found entity 1: sll_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module.sv Line: 1
+    Info (12023): Found entity 1: sll_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/sll_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file srl_module.sv
-    Info (12023): Found entity 1: srl_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module.sv Line: 1
+    Info (12023): Found entity 1: srl_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/srl_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file srl_module_tb.sv
-    Info (12023): Found entity 1: srl_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/srl_module_tb.sv Line: 1
+    Info (12023): Found entity 1: srl_module_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/srl_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sll_module_tb.sv
-    Info (12023): Found entity 1: sll_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/sll_module_tb.sv Line: 1
+    Info (12023): Found entity 1: sll_module_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/sll_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file onebitfulladder_module.sv
-    Info (12023): Found entity 1: oneBitFullAdder_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv Line: 1
+    Info (12023): Found entity 1: oneBitFullAdder_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullAdder_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbitadder_module.sv
-    Info (12023): Found entity 1: nBitAdder_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 1
+    Info (12023): Found entity 1: nBitAdder_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbitadder_module_tb.sv
-    Info (12023): Found entity 1: nBitAdder_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module_tb.sv Line: 1
+    Info (12023): Found entity 1: nBitAdder_module_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitAdder_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file onebitfullsubstractor_module.sv
-    Info (12023): Found entity 1: oneBitFullSubstractor_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv Line: 1
+    Info (12023): Found entity 1: oneBitFullSubstractor_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbitsubstractor_module.sv
-    Info (12023): Found entity 1: nBitSubstractor_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 1
+    Info (12023): Found entity 1: nBitSubstractor_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file onebitfullsubstractor_module_tb.sv
-    Info (12023): Found entity 1: oneBitFullSubstractor_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module_tb.sv Line: 1
+    Info (12023): Found entity 1: oneBitFullSubstractor_module_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/oneBitFullSubstractor_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbitsubstractor_module_tb.sv
-    Info (12023): Found entity 1: nBitSubstractor_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module_tb.sv Line: 1
+    Info (12023): Found entity 1: nBitSubstractor_module_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_module.sv
-    Info (12023): Found entity 1: alu_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 1
+    Info (12023): Found entity 1: alu_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_module_tb.sv
-    Info (12023): Found entity 1: alu_module_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 1
+    Info (12023): Found entity 1: alu_module_tb File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder_module.sv
-    Info (12023): Found entity 1: decoder_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/decoder_module.sv Line: 1
+    Info (12023): Found entity 1: decoder_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/decoder_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top_module.sv
-    Info (12023): Found entity 1: top_module File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/top_module.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at alu_module.sv(42): created implicit net for "temp_flag_slr" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 42
+    Info (12023): Found entity 1: top_module File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at alu_module.sv(42): created implicit net for "temp_flag_slr" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 42
 Info (12127): Elaborating entity "top_module" for the top level hierarchy
-Info (12128): Elaborating entity "alu_module" for hierarchy "alu_module:alu" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/top_module.sv Line: 14
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(94): variable "temp_result_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 94
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(95): variable "temp_flag_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 95
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(99): variable "temp_result_substract" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 99
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(100): variable "temp_flag_substract" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 100
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(105): variable "temp_result_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 105
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(106): variable "temp_flag_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 106
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(110): variable "temp_result_or" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 110
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(111): variable "temp_flag_or" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 111
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(115): variable "temp_result_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 115
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(116): variable "temp_flag_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 116
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(120): variable "temp_result_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 120
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(121): variable "temp_flag_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 121
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(125): variable "temp_result_srl" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 125
-Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(126): variable "temp_flag_slr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 126
-Info (12128): Elaborating entity "nBitAdder_module" for hierarchy "alu_module:alu|nBitAdder_module:adderMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 36
-Warning (10235): Verilog HDL Always Construct warning at nBitAdder_module.sv(26): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 26
-Warning (10235): Verilog HDL Always Construct warning at nBitAdder_module.sv(28): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 28
-Info (12128): Elaborating entity "oneBitFullAdder_module" for hierarchy "alu_module:alu|nBitAdder_module:adderMod|oneBitFullAdder_module:oba0" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 18
-Info (12128): Elaborating entity "nBitSubstractor_module" for hierarchy "alu_module:alu|nBitSubstractor_module:subsMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 37
-Warning (10235): Verilog HDL Always Construct warning at nBitSubstractor_module.sv(25): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 25
-Warning (10235): Verilog HDL Always Construct warning at nBitSubstractor_module.sv(27): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 27
-Info (12128): Elaborating entity "oneBitFullSubstractor_module" for hierarchy "alu_module:alu|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:oba0" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 17
-Info (12128): Elaborating entity "and_module" for hierarchy "alu_module:alu|and_module:andMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 38
-Info (12128): Elaborating entity "or_module" for hierarchy "alu_module:alu|or_module:orMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
-Info (12128): Elaborating entity "xor_module" for hierarchy "alu_module:alu|xor_module:xorMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 40
-Info (12128): Elaborating entity "sll_module" for hierarchy "alu_module:alu|sll_module:sllMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 41
-Info (12128): Elaborating entity "srl_module" for hierarchy "alu_module:alu|srl_module:srlMod" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 42
-Info (12128): Elaborating entity "decoder_module" for hierarchy "decoder_module:deco" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/top_module.sv Line: 16
+Info (12128): Elaborating entity "alu_module" for hierarchy "alu_module:alu" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module.sv Line: 14
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(51): variable "temp_result_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 51
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(52): variable "temp_flag_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 52
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(56): variable "temp_result_substract" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 56
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(57): variable "temp_flag_substract" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 57
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(61): variable "temp_result_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 61
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(62): variable "temp_flag_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 62
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(66): variable "temp_result_or" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 66
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(67): variable "temp_flag_or" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 67
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(71): variable "temp_result_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 71
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(72): variable "temp_flag_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 72
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(76): variable "temp_result_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 76
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(77): variable "temp_flag_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 77
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(81): variable "temp_result_srl" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 81
+Warning (10235): Verilog HDL Always Construct warning at alu_module.sv(82): variable "temp_flag_slr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 82
+Info (12128): Elaborating entity "nBitAdder_module" for hierarchy "alu_module:alu|nBitAdder_module:adderMod" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 36
+Warning (10235): Verilog HDL Always Construct warning at nBitAdder_module.sv(26): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 26
+Warning (10235): Verilog HDL Always Construct warning at nBitAdder_module.sv(28): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 28
+Info (12128): Elaborating entity "oneBitFullAdder_module" for hierarchy "alu_module:alu|nBitAdder_module:adderMod|oneBitFullAdder_module:oba0" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitAdder_module.sv Line: 18
+Info (12128): Elaborating entity "nBitSubstractor_module" for hierarchy "alu_module:alu|nBitSubstractor_module:subsMod" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 37
+Warning (10235): Verilog HDL Always Construct warning at nBitSubstractor_module.sv(25): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 25
+Warning (10235): Verilog HDL Always Construct warning at nBitSubstractor_module.sv(27): variable "c" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 27
+Info (12128): Elaborating entity "oneBitFullSubstractor_module" for hierarchy "alu_module:alu|nBitSubstractor_module:subsMod|oneBitFullSubstractor_module:oba0" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/nBitSubstractor_module.sv Line: 17
+Info (12128): Elaborating entity "and_module" for hierarchy "alu_module:alu|and_module:andMod" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 38
+Info (12128): Elaborating entity "or_module" for hierarchy "alu_module:alu|or_module:orMod" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 39
+Info (12128): Elaborating entity "xor_module" for hierarchy "alu_module:alu|xor_module:xorMod" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 40
+Info (12128): Elaborating entity "sll_module" for hierarchy "alu_module:alu|sll_module:sllMod" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 41
+Info (12128): Elaborating entity "srl_module" for hierarchy "alu_module:alu|srl_module:srlMod" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/alu_module.sv Line: 42
+Info (12128): Elaborating entity "decoder_module" for hierarchy "decoder_module:deco" File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module.sv Line: 16
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "flags[3]" is stuck at GND File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Laboratorio-3/experimento-1/top_module.sv Line: 8
+    Warning (13410): Pin "flags[3]" is stuck at GND File: C:/Users/ranmsy/Desktop/CE3201-Laboratorio-3/experimento-1/top_module.sv Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -532,9 +532,9 @@ Info (21057): Implemented 79 device resources after synthesis - the final resour
     Info (21059): Implemented 11 output pins
     Info (21061): Implemented 57 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4826 megabytes
-    Info: Processing ended: Mon Sep 06 21:47:19 2021
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Sun Sep 12 10:20:39 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 

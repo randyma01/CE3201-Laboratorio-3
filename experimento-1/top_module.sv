@@ -8,17 +8,13 @@ module top_module #(parameter N=4)
 );
 
 
- logic [N-1:0] temp_results;
- logic [3:0] temp_flags;
+  logic [N-1:0] temp_results;
+  logic [3:0] temp_flags;
 
- alu_module alu(a, b, uc, temp_results, temp_flags);
+  alu_module alu(a, b, uc, temp_results, temp_flags);
   
- decoder_module deco(temp_results, results);
+  decoder_module deco(temp_results, results);
  
- assign flags = temp_flags;
-
-  
-
-
+  assign flags = temp_flags;
 
 endmodule 
